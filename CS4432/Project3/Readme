@@ -1,0 +1,38 @@
+Megan Sin
+Student ID: 622101967
+
+Section I:
+- Place files in Project3Dataset-A and Project3Dataset-B folder
+- Run commands as stated in HW3's pdf
+- Selected to do sections 3 and 4
+
+Section II:
+- all commands work
+- Tests:
+    SELECT count(*)  FROM  A, B WHERE A.RandomV > B.RandomV
+    Qualifying record count: 48183340
+    Execution time: 7498.0 ms
+
+    SELECT Col2, SUM(RandomV) FROM A GROUP BY Col2
+    Name001, 24498
+    Name002, 23731
+    Name003, 25695
+    ...
+    Name098, 23611
+    Name099, 21951
+    Name100, 25953
+    Execution time: 133.0 ms
+
+    SELECT Col2, AVG(RandomV) FROM A GROUP BY Col2
+    Name001, 247
+    Name002, 239
+    Name003, 259
+    ...
+    Name098, 238
+    Name099, 221
+    Name100, 262
+    Execution time: 92.0 ms
+
+Section III:
+- Assumes that all inputs are valid and in bounds
+- Does not account for input error
