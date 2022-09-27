@@ -1,0 +1,18 @@
+Megan Sin, 622101967
+Section I:
+- Place files in Project2Dataset folder
+- Run commands exactly in the same format as stated in HW2's pdf
+
+Section II:
+- All commands work, however...
+- I was unable to optimize Range-Based Query Lookup with the use of array-based index; the Full Table Scan is less costly when in reality the array-based indexing should be cheaper
+- i.e. for the commands "CREATE INDEX ON Project2Dataset (RandomV)" followed with "SELECT * FROM Project2Dataset WHERE RandomV > 1234 AND RandomV < 1300"
+- Full Table Scan --> Data files read: 99
+- Array-Indexing --> Data files read: 152
+
+Section III:
+- Created ArrayIndex, HashIndex, and Stopwatch classes in addition to a Main class
+- Static boolean variables hashCreated and arrayCreated in Main class, used to determine if query lookup should do a Full Table Scan
+- Records are printed in full (including the three ... at the end)
+- Program assumes all inputted values in commands will be valid and in bounds (v is between 1 and 5000)
+- Does not check for user input error
